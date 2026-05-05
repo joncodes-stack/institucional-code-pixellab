@@ -25,6 +25,7 @@
 
         <div class="hero-buttons">
           <a class="btn btn-primary" id="ctaBtn" href="https://wa.me/5521991002934" target="_blank">SOLICITAR ORÇAMENTO</a>
+          <a class="btn btn-secondary" id="portfolioBtn" href="#">VER PROJETOS</a>
         </div>
       </div>
     </section>
@@ -166,56 +167,215 @@
   </div>
 </section>
 
-    <!-- SEÇÃO PORTFÓLIO
+    <!-- SEÇÃO PORTFÓLIO -->
     <section class="section-portfolio">
       <div class="container">
         <h2 class="section-title">Nosso <span>Portfólio</span></h2>
-        <div class="portfolio-grid">
+
+        <!-- Filtros -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="sites">🌐 Sites</button>
+          <button class="filter-btn" data-filter="design">🎨 Design</button>
+        </div>
+
+        <!-- PORTFÓLIO: SITES -->
+        <div class="portfolio-grid" id="portfolio-sites">
+
           <div class="portfolio-card">
-            <div class="portfolio-image">💼</div>
+            <div class="portfolio-browser">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">siteempresa.com.br</div>
+              </div>
+              <div class="portfolio-preview sites-preview-1">
+                <div class="preview-header"></div>
+                <div class="preview-body">
+                  <div class="preview-block tall"></div>
+                  <div class="preview-blocks">
+                    <div class="preview-block small"></div>
+                    <div class="preview-block small"></div>
+                    <div class="preview-block small"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="portfolio-info">
               <h3>Site Corporativo</h3>
-              <p>Desenvolvimento de site profissional com design moderno e responsivo.</p>
+              <p>Site institucional moderno com seções de serviços, equipe, depoimentos e contato.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">HTML5</span>
+                <span class="portfolio-tag">CSS3</span>
+                <span class="portfolio-tag">JavaScript</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
             </div>
           </div>
+
           <div class="portfolio-card">
-            <div class="portfolio-image">🛍️</div>
+            <div class="portfolio-browser">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">lojaecommerce.com.br</div>
+              </div>
+              <div class="portfolio-preview sites-preview-2">
+                <div class="preview-product-grid">
+                  <div class="preview-product"></div>
+                  <div class="preview-product"></div>
+                  <div class="preview-product"></div>
+                  <div class="preview-product"></div>
+                </div>
+              </div>
+            </div>
             <div class="portfolio-info">
-              <h3>E-commerce</h3>
-              <p>Plataforma de vendas online otimizada para conversão e experiência.</p>
+              <h3>Loja Virtual</h3>
+              <p>E-commerce completo com catálogo de produtos, carrinho de compras e pagamentos integrados.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">HTML5</span>
+                <span class="portfolio-tag">CSS3</span>
+                <span class="portfolio-tag">PHP</span>
+                <span class="portfolio-tag">MySQL</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
             </div>
           </div>
+
           <div class="portfolio-card">
-            <div class="portfolio-image">📱</div>
-            <div class="portfolio-info">
-              <h3>App Web</h3>
-              <p>Aplicação web customizada com funcionalidades avançadas e performance.</p>
+            <div class="portfolio-browser">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">landingpage.com.br</div>
+              </div>
+              <div class="portfolio-preview sites-preview-3">
+                <div class="preview-hero-block"></div>
+                <div class="preview-cta-block"></div>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-image">🎯</div>
             <div class="portfolio-info">
               <h3>Landing Page</h3>
-              <p>Página de conversão estratégica com design e copy persuasivo.</p>
+              <p>Página de alta conversão com animações, copy estratégico e formulário integrado.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">HTML5</span>
+                <span class="portfolio-tag">CSS3</span>
+                <span class="portfolio-tag">JavaScript</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
             </div>
           </div>
+
           <div class="portfolio-card">
-            <div class="portfolio-image">🔐</div>
-            <div class="portfolio-info">
-              <h3>Portal Seguro</h3>
-              <p>Sistema com autenticação e gerenciamento de dados seguro.</p>
+            <div class="portfolio-browser">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">dashboard.sistema.com.br</div>
+              </div>
+              <div class="portfolio-preview sites-preview-4">
+                <div class="preview-sidebar"></div>
+                <div class="preview-main">
+                  <div class="preview-chart"></div>
+                  <div class="preview-stats">
+                    <div class="preview-stat"></div>
+                    <div class="preview-stat"></div>
+                    <div class="preview-stat"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-image">📊</div>
             <div class="portfolio-info">
               <h3>Dashboard Analítico</h3>
-              <p>Painel de análise com visualizações de dados em tempo real.</p>
+              <p>Painel de controle web com visualizações de dados em tempo real e relatórios gerenciais.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">React</span>
+                <span class="portfolio-tag">Node.js</span>
+                <span class="portfolio-tag">MySQL</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
             </div>
           </div>
+
+        </div>
+
+        <!-- PORTFÓLIO: DESIGN -->
+        <div class="portfolio-grid portfolio-hidden" id="portfolio-design">
+
+          <div class="portfolio-card">
+            <div class="portfolio-design-preview design-preview-1">
+              <div class="design-icon">✦</div>
+              <div class="design-label">Identidade Visual</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Identidade Visual Completa</h3>
+              <p>Logo, paleta de cores, tipografia e manual de marca para startup de tecnologia.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Logotipo</span>
+                <span class="portfolio-tag">Branding</span>
+                <span class="portfolio-tag">Manual de Marca</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-design-preview design-preview-2">
+              <div class="design-icon">📱</div>
+              <div class="design-label">Social Media</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Posts para Redes Sociais</h3>
+              <p>Pack de posts criativos e temáticos para Instagram, Facebook e LinkedIn.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Instagram</span>
+                <span class="portfolio-tag">Illustrator</span>
+                <span class="portfolio-tag">Canva Pro</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-design-preview design-preview-3">
+              <div class="design-icon">🖨️</div>
+              <div class="design-label">Material Impresso</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Material Gráfico Impresso</h3>
+              <p>Catálogo de produtos, cartão de visita, flyer e banner para empresa do setor de varejo.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">InDesign</span>
+                <span class="portfolio-tag">Photoshop</span>
+                <span class="portfolio-tag">Impresso</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-design-preview design-preview-4">
+              <div class="design-icon">🖥️</div>
+              <div class="design-label">UI / UX Design</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>UI/UX de Aplicativo</h3>
+              <p>Wireframes, protótipo interativo e design de interface para aplicativo de gestão financeira.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Figma</span>
+                <span class="portfolio-tag">Protótipo</span>
+                <span class="portfolio-tag">UX Research</span>
+              </div>
+              <a href="#" class="portfolio-link">Ver Projeto →</a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- SEÇÃO CONTATO -->
     <section class="section-contact">
